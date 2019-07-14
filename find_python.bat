@@ -1,6 +1,12 @@
 @echo off
 setlocal enabledelayedexpansion
 
+REM https://github.com/RecklessDev/PythonInstallFinder
+REM MIT License
+
+REM This scripts looks on the system to find the specified python versions
+REM It returns in environment variable PYTHON_INSTALL_DIR the folder where python.exe is found
+
 REM Set the script defaults so they behave consistently
 set INTERNAL_SUPPORTED_PYTHON_VERSIONS=
 set INTERNAL_PRINT_PYTHON_PATH=0
@@ -127,4 +133,7 @@ exit /B 1
 if %PYTHON_INSTALL_DIR% == "" goto ERROR
 
 if %INTERNAL_PRINT_PYTHON_PATH%==1 echo %PYTHON_INSTALL_DIR%
+
+endlocal & set PYTHON_EX=%PYTHON_INSTALL_DIR%
+
 exit /B 0
