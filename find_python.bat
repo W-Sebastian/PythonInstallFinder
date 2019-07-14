@@ -1,9 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
 
-REM For testing
-set PATH=%PATH%;F:\Software\Python-3_7_4
-
 REM Set the script defaults so they behave consistently
 set INTERNAL_SUPPORTED_PYTHON_VERSIONS=
 set INTERNAL_PRINT_PYTHON_PATH=0
