@@ -18,7 +18,7 @@ To get the location of python 3.6, 3.5, 3.4 and 3.3:
 
 
 
-Both these runs show no output so it can be easily integrated in other scripts. The location of the python directory can be found in the environment variable `PYTHON_INSTALL_DIR`. From batch python can be invoked using `%PYTHON_INSTALL_DIR%\python.exe`.
+Both these runs show no output so it can be easily integrated in other scripts. The location of the python directory can be found in the environment variable `PYTHON_INSTALL_DIR`. From batch, python can be invoked using `%PYTHON_INSTALL_DIR%\python.exe`.
 
 If the path is preferred to be taken from the output, then the `-p` extra option can be used:
 
